@@ -1,2 +1,10 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<div class="container">
+  <h1>[Rails+Vue.js]~Bookshelf~</h1>
+  <div class="row">
+    <% @books.each do |book| %>
+      <div>
+        <span><%= book.title %></span>
+      </div>
+    <% end %>
+  </div>
+</div>
